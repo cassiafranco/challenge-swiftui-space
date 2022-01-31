@@ -20,12 +20,12 @@ struct DetailsView: View {
         NavigationView {
             ScrollView {
                 Text(viewModel.description)
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color.descriptionColorGray)
                     .font(.system(size: 20, weight: .regular))
-                    .padding(.top , 16)
-                    .background(.black)
+                    .padding(EdgeInsets(top: 16, leading: 37, bottom: 0, trailing: 37))
                     .navigationTitle(viewModel.title)
             }
+            .background(Color.backgroundColorBlack)
         }
     }
 }
